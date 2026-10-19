@@ -1,0 +1,27 @@
+/* ===== HEADER ===== */
+
+header {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ===== MAIN ===== */
+
+main {
+    min-height: 80vh;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: var(--color-text);
+    color: var(--color-white);
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* ===== SECTIONS ===== */
+
+section {
+    padding: 4rem 0;
+}

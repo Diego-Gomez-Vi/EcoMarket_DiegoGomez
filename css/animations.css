@@ -1,0 +1,24 @@
+/* ===== TRANSICIONES GENERALES ===== */
+
+* {
+    transition: var(--transition);
+}
+
+/* ===== HOVER TARJETAS ===== */
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ===== BOTONES ===== */
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== ICONOS REDES ===== */
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
