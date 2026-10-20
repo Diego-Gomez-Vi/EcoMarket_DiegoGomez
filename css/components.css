@@ -14,6 +14,13 @@
     background-color: var(--color-primary-dark);
 }
 
+/* ===== ENLACE ACTIVO ===== */
+
+.active {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
 /* ===== TITULOS ===== */
 
 .section-title {
@@ -22,7 +29,7 @@
     font-size: 2rem;
 }
 
-/* ===== HERO ===== */
+/* ===== HERO HOME ===== */
 
 .hero {
     background-color: var(--color-secondary);
@@ -50,6 +57,49 @@
     object-fit: cover;
     border-radius: var(--radius);
     box-shadow: var(--shadow-md);
+}
+
+/* ===== SOBRE NOSOTROS ===== */
+
+.about-hero {
+    background-color: var(--color-secondary);
+    text-align: center;
+}
+
+.about-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-text-light);
+}
+
+.cards-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.our-history p {
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+}
+
+.cta-section {
+    text-align: center;
+    background-color: var(--color-secondary);
+}
+
+.cta-section h2 {
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    margin-bottom: 2rem;
+    color: var(--color-text-light);
 }
 
 /* ===== PRODUCTOS ===== */
@@ -102,32 +152,6 @@ footer h3 {
 
 footer p {
     margin-bottom: 0.5rem;
-}
-
-/* ===== TABLET ===== */
-
-@media (min-width: 768px) {
-
-    .hero .container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* ===== DESKTOP ===== */
-
-@media (min-width: 1024px) {
-
-    .hero-content h2 {
-        font-size: 3rem;
-    }
-
-    .products-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 /* ===================================
@@ -220,6 +244,14 @@ footer p {
 
 @media (min-width: 768px) {
 
+    .hero .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .catalog-layout {
         grid-template-columns: 250px 1fr;
         align-items: start;
@@ -230,7 +262,7 @@ footer p {
         top: 20px;
     }
 
-    .products-grid {
+    .cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -241,7 +273,15 @@ footer p {
 
 @media (min-width: 1024px) {
 
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
     .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .values .cards-container {
         grid-template-columns: repeat(4, 1fr);
     }
 }
