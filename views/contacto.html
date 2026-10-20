@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Ponte en contacto con EcoMarket. Resuelve tus dudas, comparte tus comentarios o recibe asesoría sobre nuestros productos ecológicos."
+    >
+
     <title>EcoMarket | Contacto</title>
 
     <link rel="stylesheet" href="../css/main.css">
@@ -16,33 +22,196 @@
 
     <header>
         <div class="container">
+
             <nav class="navbar">
 
-                <h1 class="logo">EcoMarket</h1>
+                <h1 class="logo">
+                    <a href="../index.html">EcoMarket</a>
+                </h1>
 
                 <ul class="nav-menu">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="products.html">Productos</a></li>
                     <li><a href="sobre-nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html" class="active">Contacto</a></li>
                 </ul>
 
                 <div class="nav-icons">
-                    <a href="#">🔍</a>
-                    <a href="#">🛒</a>
+                    <a href="#" aria-label="Buscar productos">🔍</a>
+                    <a href="#" aria-label="Carrito de compras">🛒</a>
                 </div>
 
             </nav>
+
         </div>
     </header>
 
     <main>
 
+        <section class="contact-hero">
+            <div class="container">
+
+                <h2>Contáctanos</h2>
+
+                <p>
+                    Estamos aquí para ayudarte. Si tienes preguntas,
+                    comentarios o deseas más información sobre nuestros productos,
+                    no dudes en comunicarte con nosotros.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+
+                <h2 class="section-title">
+                    Información de Contacto
+                </h2>
+
+                <div class="cards-container">
+
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>📧 Correo Electrónico</h3>
+                            <p>contacto@ecomarket.com</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>📞 Teléfono</h3>
+                            <p>+57 300 123 4567</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>📍 Dirección</h3>
+                            <p>
+                                Calle 123 #45-67<br>
+                                Medellín, Colombia
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>🕒 Horario</h3>
+                            <p>
+                                Lunes a Viernes<br>
+                                8:00 a.m. - 6:00 p.m.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+
+                <h2 class="section-title">
+                    Envíanos un Mensaje
+                </h2>
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ingresa tu nombre"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico</label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="correo@ejemplo.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+
+                        <input
+                            type="text"
+                            id="asunto"
+                            name="asunto"
+                            placeholder="Asunto del mensaje"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            placeholder="Escribe tu mensaje aquí..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Enviar Mensaje
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+
+                <h2>Gracias por confiar en EcoMarket</h2>
+
+                <p>
+                    Nuestro equipo está comprometido con brindarte la mejor atención
+                    y acompañarte en tu camino hacia un estilo de vida más sostenible.
+                </p>
+
+                <a href="products.html" class="btn">
+                    Ver Productos
+                </a>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+
+            <h3>EcoMarket</h3>
+
+            <p>
+                Promoviendo un estilo de vida sostenible mediante productos ecológicos.
+            </p>
+
+            <p>
+                contacto@ecomarket.com
+            </p>
+
+            <p>
+                © 2026 EcoMarket. Todos los derechos reservados.
+            </p>
+
         </div>
     </footer>
 
