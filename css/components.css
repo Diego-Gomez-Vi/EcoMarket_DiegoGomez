@@ -102,6 +102,90 @@
     color: var(--color-text-light);
 }
 
+/* ===================================
+   CONTACTO
+=================================== */
+
+.contact-hero {
+    background-color: var(--color-secondary);
+    text-align: center;
+}
+
+.contact-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-text-light);
+}
+
+.contact-info {
+    background-color: var(--color-white);
+}
+
+.contact-info .card {
+    text-align: center;
+}
+
+.contact-info .card-content h3 {
+    color: var(--color-primary-dark);
+}
+
+.contact-form-section {
+    background-color: #f9fafb;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
 /* ===== PRODUCTOS ===== */
 
 .featured-products {
@@ -265,6 +349,10 @@ footer p {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact-info .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* ===================================
@@ -282,6 +370,10 @@ footer p {
     }
 
     .values .cards-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact-info .cards-container {
         grid-template-columns: repeat(4, 1fr);
     }
 }
