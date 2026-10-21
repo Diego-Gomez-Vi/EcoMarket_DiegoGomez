@@ -62,19 +62,37 @@
 /* ===== SOBRE NOSOTROS ===== */
 
 .about-hero {
-    background-color: var(--color-secondary);
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../img/hero/sobre-nosotros-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
+    color: var(--color-white);
 }
 
 .about-hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    color: var(--color-white);
 }
 
 .about-hero p {
     max-width: 800px;
     margin: 0 auto;
-    color: var(--color-text-light);
+    color: var(--color-white);
 }
 
 .cards-container {
@@ -82,10 +100,60 @@
     gap: 2rem;
 }
 
-.our-history p {
-    max-width: 900px;
-    margin: 0 auto 1.5rem;
+.history-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.history-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+}
+
+.history-text p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.value-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.values .card {
     text-align: center;
+}
+
+/* ===== TESTIMONIOS ===== */
+
+.testimonials {
+    background-color: #f9fafb;
+}
+
+.testimonial-card {
+    text-align: center;
+}
+
+.testimonial-avatar {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid var(--color-primary);
+}
+
+.stars {
+    color: #f4b400;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
 }
 
 .cta-section {
@@ -107,19 +175,37 @@
 =================================== */
 
 .contact-hero {
-    background-color: var(--color-secondary);
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../img/hero/contacto-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
+    color: var(--color-white);
 }
 
 .contact-hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    color: var(--color-white);
 }
 
 .contact-hero p {
     max-width: 800px;
     margin: 0 auto;
-    color: var(--color-text-light);
+    color: var(--color-white);
 }
 
 .contact-info {
@@ -180,10 +266,75 @@
     min-height: 150px;
 }
 
+.form-group input:valid,
+.form-group textarea:valid {
+    border: 2px solid #22c55e;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+    border: 2px solid #ef4444;
+}
+
 .contact-form .btn {
     width: 100%;
     border: none;
     cursor: pointer;
+}
+
+/* ===== MAPA ===== */
+
+.map-section {
+    background-color: var(--color-white);
+}
+
+.map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+}
+
+/* ===== REDES SOCIALES ===== */
+
+.social-section {
+    text-align: center;
+    background-color: #f9fafb;
+}
+
+.social-text {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: var(--color-text-light);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    text-decoration: none;
+
+    transition: var(--transition);
 }
 
 /* ===== PRODUCTOS ===== */
@@ -222,6 +373,7 @@
 .card-content p {
     margin-bottom: 1.5rem;
     color: var(--color-text-light);
+    text-align: justify;
 }
 
 /* ===== FOOTER ===== */
@@ -236,6 +388,63 @@ footer h3 {
 
 footer p {
     margin-bottom: 0.5rem;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.footer-links a,
+.footer-social a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: var(--color-primary);
+}
+
+/* ===== HERO CATALOGO ===== */
+
+.catalog-hero {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../img/hero/catalogo-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--color-white);
+}
+
+.catalog-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.catalog-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-white);
 }
 
 /* ===================================
@@ -353,6 +562,16 @@ footer p {
     .contact-info .cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .history-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .history-image,
+    .history-text {
+        flex: 1;
+    }
 }
 
 /* ===================================
@@ -365,12 +584,20 @@ footer p {
         font-size: 3rem;
     }
 
-    .products-grid {
+    .featured-products .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .catalog-layout .products-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 
     .values .cards-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .testimonials .cards-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .contact-info .cards-container {
